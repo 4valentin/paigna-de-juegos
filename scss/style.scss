@@ -1,0 +1,348 @@
+$amarillo:#FFF176;
+$amarillo-oscuro:#D4AC0D;
+$texto: texto1, texto2, texto3; 
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #212121;
+    color:$amarillo;
+    }
+body {
+ 
+    @each $texto in unoBgcolor, dosBgcolor, tresBgblog{
+        .#{texto}Bgblog { 
+            background-color: $amarillo;
+            color: black;
+        }
+    } 
+
+    #comunidad {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "foro"
+          "footer"
+        ;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 400px;
+        grid-template-areas:"header" "foro" "footer";
+
+        header {
+            grid-area: header;
+        }
+        .foro{
+            grid-area: foro;
+        }
+        footer {
+            grid-area: footer;
+        }
+    }
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "productos publicidad"
+            "servicios publicidad"
+            "footer footer";
+        grid-template-rows:1fr; 
+        grid-template-columns: 3fr 1fr;    
+
+        .border {
+            border: 1px solid black;
+        }
+        header {
+            grid-area: header;
+        }
+        footer {
+            grid-area: footer;
+        }
+        section#productos {
+            grid-area: productos; 
+            background-color: $amarillo; 
+            color: black;   
+        }
+        section#servicios {
+            grid-area: servicios;     
+            background-color: $amarillo; 
+            color: black;
+        }
+        aside {
+            grid-area: publicidad;
+        }
+    }
+
+    #home {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "textoindex"
+          "footer"
+        ;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 300px 400px;
+        grid-template-areas:"header" "textoindex" "footer";
+
+        header {
+            grid-area: header;
+            }
+        .textoindex {
+            grid-area: textoindex;
+            }
+        footer {
+            grid-area: footer;
+        }
+    }
+
+    #contacto {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "contacto"
+          "footer"
+        ;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 600px 400px;
+        grid-template-areas:"header" "contacto" "footer";
+
+        header {
+            grid-area: header;
+        }
+        .contactogrid{
+            grid-area: contacto;     
+        }
+        footer {
+            grid-area: footer;
+        }
+    }
+    form{
+        margin: 0% auto;
+        width: 300px;
+        background-color: #003333;
+        color: #eeee;
+        padding: 25px;
+        border-radius: 15px;
+        font-size: 15px;
+        font-family: monospace;
+        color: #D5DBDB;
+        margin-top: 50px;
+    }
+    
+    input, textarea{
+        border: 0;
+        outline: none;
+    }
+    
+    .caja{
+        border: 1px solid #212121;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    
+    .caja:focus{ 
+        border-color: red;
+    }
+    
+    label{
+        padding: 15px;
+    }
+    
+    table {
+        margin: auto;
+        background-color: #616A6B;
+        border-radius: 10px;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    
+        a{
+            color: $amarillo-oscuro;
+        }
+    }   
+    .formulario input[type="radio"], 
+    .formulario input[type="checkbox"] {
+        display: none;
+    }    
+    
+    .formulario .radio label,
+    .formulario .checkbox label{
+        color: #D5DBDB; 
+        padding: 5px 15px 5px 51px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover{
+        background-color: rgba(213, 219, 219,0.3)
+    }
+    
+    .formulario .radio label:before,
+    .formulario .checkbox label:before{
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background-color: none;
+        border: 3px solid #D5DBDB;
+        border-radius: 50%;
+        position: absolute;
+        left: 17px;
+        top: 4px;
+    }
+    
+    .formulario .checkbox label:before{
+        border-radius: 3px;
+    }
+    
+    .formulario input[type="radio"]:checked + label,
+    .formulario input[type="checkbox"]:checked + label {
+        padding: 5px 15px;
+        background-color: #D5DBDB;
+        border-radius: 2px;
+        color: black
+    }
+    
+    .formulario input[type="radio"]:checked + label:before,
+    .formulario input[type="checkbox"]:checked + label:before{
+        display: none;
+    }
+    .foro{
+        padding: 15px;
+            .unoBgcolor{
+                background-color: $amarillo;
+                color: black;
+            }
+    }
+    .header {
+        background-color: #000033;
+        text-align: center;
+        height: 100px;
+        img {
+            height: 100px;
+            width: 100px;
+            float: left
+        }
+        .menu{
+            padding: 40px 5px;
+            overflow: hidden;
+            li{
+                display: inline-block;
+                border: 1px solid $amarillo-oscuro;
+                border-radius: 15px;
+                width: 100px;
+                height: 20px;
+                font: bold 15px Georgia
+            }
+            a{
+                color: $amarillo-oscuro;
+            }
+        }
+    }
+    .titulos{
+        text-align: center;
+        padding: 0;
+        font-size: 40px;
+        background-color: $amarillo;
+        color: black;
+    }
+    .textoindex {
+        display:inline-block;
+        font-family: 'Bona Nova', serif;
+        font-size: 15px;
+        color: black;
+        background-color: $amarillo;
+        align-content: start
+    }
+    footer{
+        display: grid;
+        position: relative;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        height: auto;
+        width: 100%;
+        font-family: "Open Sans";
+        padding-top: 40px;
+        color: white;
+
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            font-size: 1.8rem;
+            font-weight: 400px;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+        li{
+            margin: 0 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            li{
+                font-size: 1.1rem;
+                transition: color .4s ease;
+            }
+        }
+        a:hover i{
+            color: aqua;
+        }
+    }
+    .footer-bottom{
+        background-color: #000;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+    }
+    }
+    .soporte{
+        background-color: white;
+        text-align: center;
+        button{
+            height: 100px;
+            width: 100%;
+        }
+        img{
+            text-align: center;
+        }
+    }
+}

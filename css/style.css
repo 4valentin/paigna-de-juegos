@@ -1,0 +1,275 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+body {
+  background-color: #212121;
+  color: #FFF176; }
+
+body .textoBgblog {
+  background-color: #FFF176;
+  color: black; }
+
+body .textoBgblog {
+  background-color: #FFF176;
+  color: black; }
+
+body .textoBgblog {
+  background-color: #FFF176;
+  color: black; }
+
+body #comunidad {
+  display: grid;
+  grid-template-areas: "header" "foro" "footer";
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 400px;
+  grid-template-areas: "header" "foro" "footer"; }
+  body #comunidad header {
+    grid-area: header; }
+  body #comunidad .foro {
+    grid-area: foro; }
+  body #comunidad footer {
+    grid-area: footer; }
+
+body #grilla {
+  display: grid;
+  grid-template-areas: "header header" "productos publicidad" "servicios publicidad" "footer footer";
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 1fr; }
+  body #grilla .border {
+    border: 1px solid black; }
+  body #grilla header {
+    grid-area: header; }
+  body #grilla footer {
+    grid-area: footer; }
+  body #grilla section#productos {
+    grid-area: productos;
+    background-color: #FFF176;
+    color: black; }
+  body #grilla section#servicios {
+    grid-area: servicios;
+    background-color: #FFF176;
+    color: black; }
+  body #grilla aside {
+    grid-area: publicidad; }
+
+body #home {
+  display: grid;
+  grid-template-areas: "header" "textoindex" "footer";
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 300px 400px;
+  grid-template-areas: "header" "textoindex" "footer"; }
+  body #home header {
+    grid-area: header; }
+  body #home .textoindex {
+    grid-area: textoindex; }
+  body #home footer {
+    grid-area: footer; }
+
+body #contacto {
+  display: grid;
+  grid-template-areas: "header" "contacto" "footer";
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 600px 400px;
+  grid-template-areas: "header" "contacto" "footer"; }
+  body #contacto header {
+    grid-area: header; }
+  body #contacto .contactogrid {
+    grid-area: contacto; }
+  body #contacto footer {
+    grid-area: footer; }
+
+body form {
+  margin: 0% auto;
+  width: 300px;
+  background-color: #003333;
+  color: #eeee;
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: monospace;
+  color: #D5DBDB;
+  margin-top: 50px; }
+
+body input, body textarea {
+  border: 0;
+  outline: none; }
+
+body .caja {
+  border: 1px solid #212121;
+  padding: 10px;
+  border-radius: 15px; }
+
+body .caja:focus {
+  border-color: red; }
+
+body label {
+  padding: 15px; }
+
+body table {
+  margin: auto;
+  background-color: #616A6B;
+  border-radius: 10px; }
+  body table img {
+    width: 150px;
+    height: 150px; }
+  body table a {
+    color: #D4AC0D; }
+
+body .formulario input[type="radio"],
+body .formulario input[type="checkbox"] {
+  display: none; }
+
+body .formulario .radio label,
+body .formulario .checkbox label {
+  color: #D5DBDB;
+  padding: 5px 15px 5px 51px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer; }
+
+body .formulario .radio label:hover,
+body .formulario .checkbox label:hover {
+  background-color: rgba(213, 219, 219, 0.3); }
+
+body .formulario .radio label:before,
+body .formulario .checkbox label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-color: none;
+  border: 3px solid #D5DBDB;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
+  top: 4px; }
+
+body .formulario .checkbox label:before {
+  border-radius: 3px; }
+
+body .formulario input[type="radio"]:checked + label,
+body .formulario input[type="checkbox"]:checked + label {
+  padding: 5px 15px;
+  background-color: #D5DBDB;
+  border-radius: 2px;
+  color: black; }
+
+body .formulario input[type="radio"]:checked + label:before,
+body .formulario input[type="checkbox"]:checked + label:before {
+  display: none; }
+
+body .foro {
+  padding: 15px; }
+  body .foro .unoBgcolor {
+    background-color: #FFF176;
+    color: black; }
+
+body .header {
+  background-color: #000033;
+  text-align: center;
+  height: 100px; }
+  body .header img {
+    height: 100px;
+    width: 100px;
+    float: left; }
+  body .header .menu {
+    padding: 40px 5px;
+    overflow: hidden; }
+    body .header .menu li {
+      display: inline-block;
+      border: 1px solid #D4AC0D;
+      border-radius: 15px;
+      width: 100px;
+      height: 20px;
+      font: bold 15px Georgia; }
+    body .header .menu a {
+      color: #D4AC0D; }
+
+body .titulos {
+  text-align: center;
+  padding: 0;
+  font-size: 40px;
+  background-color: #FFF176;
+  color: black; }
+
+body .textoindex {
+  display: inline-block;
+  font-family: 'Bona Nova', serif;
+  font-size: 15px;
+  color: black;
+  background-color: #FFF176;
+  align-content: start; }
+
+body footer {
+  display: grid;
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: white; }
+  body footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    body footer .footer-content h3 {
+      font-size: 1.8rem;
+      font-weight: 400px;
+      text-transform: capitalize;
+      line-height: 3rem; }
+    body footer .footer-content p {
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px; }
+  body footer .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0; }
+    body footer .socials li {
+      margin: 0 10px; }
+    body footer .socials a {
+      text-decoration: none;
+      color: white; }
+      body footer .socials a li {
+        font-size: 1.1rem;
+        transition: color .4s ease; }
+    body footer .socials a:hover i {
+      color: aqua; }
+  body footer .footer-bottom {
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center; }
+    body footer .footer-bottom p {
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize; }
+    body footer .footer-bottom span {
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200; }
+
+body .soporte {
+  background-color: white;
+  text-align: center; }
+  body .soporte button {
+    height: 100px;
+    width: 100%; }
+  body .soporte img {
+    text-align: center; }
